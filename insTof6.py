@@ -107,12 +107,12 @@ class InstaBrute(object):
 
     def New_Br(self, user, pwd):
         link = 'https://www.instagram.com/accounts/login/'
-        login_url = 'https://www.instagram.com/accounts/login/ajax/'
+        login_url = 'https://instagram.com/mjs.manoelle?utm_medium=copy_link'
 
         time = int(datetime.now().timestamp())
 
         payload = {
-            'username': user,
+            'username': user,@msj.manoelle
             'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pwd}',
             'queryParams': {},
             'optIntoOneTap': 'false'
